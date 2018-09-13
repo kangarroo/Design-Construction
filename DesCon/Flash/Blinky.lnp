@@ -1,0 +1,25 @@
+--cpu Cortex-M4.fp
+".\flash\led.o"
+".\flash\swt.o"
+".\flash\retarget.o"
+".\flash\serial.o"
+".\flash\main.o"
+".\flash\breadboard.o"
+".\flash\voltage.o"
+".\flash\lcd_buffer.o"
+".\flash\lcd_driver.o"
+".\flash\buttons.o"
+".\flash\resistance.o"
+".\flash\light.o"
+".\flash\current.o"
+".\flash\transistor.o"
+".\flash\capacitance.o"
+".\flash\timer.o"
+".\flash\frequency.o"
+".\flash\logic.o"
+".\flash\startup_stm32f407xx.o"
+".\flash\system_stm32f4xx.o"
+--strict --scatter ".\Flash\Blinky.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Flash\Blinky.map" -o .\Flash\Blinky.axf
